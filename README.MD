@@ -51,18 +51,6 @@ The current implementation also includes:
 
 For an input tensor of shape `(B, 3, 32, 32)`, the implemented Inception module produces a hidden representation suitable for reuse in later image-captioning experiments.
 
-## Repository Structure
-
-### Part 1 — Try It Yourself
-
-Contains the functions to implement, together with tests designed to verify the forward-pass operations.
-
-### Part 2 — Solutions
-
-Contains reference implementations and optional backward-pass functions.
-
-The GoogLeNet section contains the ongoing PyTorch reproduction of the architecture.
-
 ## Functions Implemented in NumPy
 
 ### `zero_pad`
@@ -95,5 +83,3 @@ torch
 The NumPy implementation uses explicit loops rather than vectorized operations. This is intentional: the purpose of the project is **to understand the mechanics of CNNs**, not to achieve computational efficiency.
 
 The PyTorch implementation then builds on this intuition to reproduce a more complex real-world CNN architecture.
-
-The project is developed incrementally, with emphasis on understanding the mathematical and architectural ideas behind each component before moving to higher-level implementations.
